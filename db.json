@@ -1,0 +1,27 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Tata Nexon",
+      "description": "Best car in the market",
+      "price": 1650000,
+      "photo": "https://res.cloudinary.com/learncloud/image/upload/v1681101717/avatar_kumh14.png"
+    },
+    {
+      "id": 2,
+      "name": "Tata Punch",
+      "description": "Best car in the market",
+      "price": 670000,
+      "photo": "https://res.cloudinary.com/learncloud/image/upload/v1681101717/avatar_kumh14.png"
+    },
+    {
+      "id": 3,
+      "name": "Tata Safari",
+      "description": "Best car in the market",
+      "price": 1800000,
+      "photo": "https://res.cloudinary.com/learncloud/image/upload/v1681101717/avatar_kumh14.png",
+      "numOfRatings": 250,
+      "rating": 4.5
+    }
+  ]
+}
