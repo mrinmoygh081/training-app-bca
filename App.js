@@ -1,6 +1,15 @@
 import { StatusBar } from "expo-status-bar";
 import { useState, useEffect } from "react";
-import { StyleSheet, Text, View, TextInput, Image } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  TextInput,
+  Image,
+  ScrollView,
+  Platform,
+} from "react-native";
+import ProductForm from "./components/ProductForm";
 
 export default function App() {
   const [data, setData] = useState(null);
@@ -9,7 +18,6 @@ export default function App() {
   const getProducts = () => {
     let requestOptions = {
       method: "GET",
-      redirect: "follow",
     };
 
     fetch("http://10.0.2.2:3001/products", requestOptions)
@@ -24,7 +32,7 @@ export default function App() {
 
   return (
     <>
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
         <View style={styles.allData}>
           {data ? (
             data.map((item, i) => {
@@ -45,7 +53,10 @@ export default function App() {
             <Text>Loading..</Text>
           )}
         </View>
-      </View>
+        <View>
+          <ProductForm getProducts={getProducts} />
+        </View>
+      </ScrollView>
       <StatusBar style="auto" />
     </>
   );
@@ -55,7 +66,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "aqua",
-    paddingTop: 50,
+    paddingTop: Platform.OS === "IOS" ? 0 : 30,
     paddingLeft: 10,
     paddingRight: 10,
   },

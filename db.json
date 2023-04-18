@@ -22,6 +22,50 @@
       "photo": "https://res.cloudinary.com/learncloud/image/upload/v1681101717/avatar_kumh14.png",
       "numOfRatings": 250,
       "rating": 4.5
+    },
+    {
+      "name": "Tata Harrier",
+      "price": "1800000",
+      "description": "",
+      "photo": "https://res.cloudinary.com/learncloud/image/upload/v1681101717/avatar_kumh14.png",
+      "numOfRatings": 250,
+      "rating": 4.5,
+      "desc": "Most safest car in India",
+      "id": 4
+    },
+    {
+      "name": "Tata Nano",
+      "price": "1500000",
+      "description": "Affordable Car",
+      "photo": "https://res.cloudinary.com/learncloud/image/upload/v1681101717/avatar_kumh14.png",
+      "numOfRatings": 250,
+      "rating": 4.5,
+      "id": 5
+    },
+    {
+      "name": "Mahindra Thar",
+      "price": "150000",
+      "description": "Savage Car in India",
+      "photo": "https://res.cloudinary.com/learncloud/image/upload/v1681101717/avatar_kumh14.png",
+      "numOfRatings": 250,
+      "rating": 4.5,
+      "id": 6
+    },
+    {
+      "name": "Mahindra Scorpio",
+      "price": "180000",
+      "description": "Gangstar SUV",
+      "photo": "https://res.cloudinary.com/learncloud/image/upload/v1681101717/avatar_kumh14.png",
+      "numOfRatings": 250,
+      "rating": 4.5,
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "name": "Bodhi",
+      "email": "bodhi@gmail.com",
+      "password": "admin"
     }
   ]
 }
